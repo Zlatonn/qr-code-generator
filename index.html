@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+     <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="javasScript">
+    <div class="container">
+        <div class="topic">
+            <h1>QR GENERATOR</h1>
+        </div>
+        <div class="input-text">
+            <input type="text" placeholder="Enter text or link..." id="text-box">
+        </div>
+        <div class="qr-box">
+             <div id="qr-code"></div>
+        </div>
+        <div class="option">
+            <div class="format">
+                <p>Format</p>
+                <select id="format-dropdown">
+                    <option value="png">PNG</option>
+                    <option value="svg">SVG</option>
+                    <option value="jpeg">JPEG</option>
+                </select>
+            </div>
+            <div class="theme">
+                <p>Theme</p>
+                <select id="theme-dropdown">
+                    <option value="javasScript">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="sass">SASS</option>
+                    <option value="nodeJs">NodeJS</option>
+                    <option value="nextJs">Next.JS</option>
+                    <option value="bootStrap">Bootstrap</option>
+                    <option value="typeScript">TypeScript</option>                    
+                </select>
+            </div>
+        </div>
+        <div class="download">
+            <button type="button" id="download-btn"><a href="#" id="download-link">DOWLOAD</a><img src="images/dowload.png"></button>
+        </div> 
+    </div>
+    <!-- QR Code CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
